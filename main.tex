@@ -1,0 +1,107 @@
+\documentclass[hyp]{socreport}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{psfrag}
+\usepackage{times}
+\usepackage{enumerate}
+\usepackage{subcaption}
+\usepackage{todonotes}
+\usepackage{amsmath}
+\usepackage{appendix}
+\usepackage{tcolorbox}
+\usepackage[
+backend=biber,
+style=numeric,
+citestyle=numeric,
+]{biblatex}
+\bibliography{citations.bib}
+
+\usepackage{amsmath,stmaryrd,graphicx}
+
+\makeatletter
+\newcommand{\fixed@sra}{$\vrule height 2\fontdimen22\textfont2 width 0pt\shortrightarrow$}
+\newcommand{\shortarrow}[1]{%
+  \mathrel{\text{\rotatebox[origin=c]{\numexpr#1*45}{\fixed@sra}}}
+}
+\makeatother
+
+%\usepackage[nottoc]{tocbibind}
+
+
+\begin{document}
+
+\pagenumbering{roman}
+\title{Report Title}
+\author{Your Name}
+\projyear{2024/25}
+\projnumber{Student Number}
+\advisor{Dr.\ Ben Leong}
+\deliverables{
+	\item FYP CA Report}
+
+\maketitle
+
+\tableofcontents 
+
+\chapter{Introduction}
+\label{intro}
+% To make your project even more organized, you even have different chapters in your thesis/report in different tex files
+
+Your introduction goes here. The main goal of the introduction is to answer the following key questions:
+\begin{enumerate}
+    \item \textbf{What} is the problem you are trying to solve?
+    \item \textbf{Why} should we should we care about solving this problem well?
+    \item \textbf{Why} has this problem not been solved well enough?
+    \item \textbf{How} are you going to fix that? \textbf{What} key insight do you think will allow you to solve this super important problem better than it has been solved before?
+\end{enumerate}
+
+For a good problem, items 1), 2), and 3) should be clear from the start. Item 4) will evolve as the project progresses - that's okay. But you should still have some idea/hypothesis in the early stages.
+
+\section{Project Description}
+
+Items 1), 2), and 3) in detail.
+
+\section{Project Objectives}
+
+A clear action plan for item 4). In the early stages, if your key insight is based on some hypothesis - propose an experiment/measurement to test and support that hypothesis.
+You can also provide a rough action plan on how you are going to apply your key insight to the solution you are ultimately going to propose. Finally, describe how you are going to evaluate the {\em goodness} of your solution. These objectives are not set in stone and will evolve.
+
+The following are the current objectives of the project: 
+\begin{itemize}
+    \item Objective 1
+    \item Objective 2
+    \item Objective 3
+\end{itemize}
+
+\clearpage
+
+\chapter{Related Work}
+\label{sec:related}
+
+What is the state-of-the-art? The Related works section is \textbf{NOT} a laundry list of papers and their summaries. Remember, you are mainly trying to answer item 3) ({\em Why has this problem not been solved well enough?}) in this chapter. Organize your chapter accordingly. 
+
+Early project reports need to demonstrate that you have a good understanding of both your problem statement and the related work. This chapter demonstrates this the best - so spend more time on it. You need to convince your examiner that you know the lay of the land in whatever area you are working on.
+
+\chapter{Project Progress}
+\label{sec:progress}
+
+This chapter needs to directly address your action plan. Report some early results here. If the results are positive - congratulations! If they are not, discuss why and how you plan to investigate this problem further.
+
+%\section{Overview}
+
+
+\chapter{Future Research Plans}
+\label{sec:future}
+
+Give a slightly more concrete description of how you plan to achieve your remaining project objectives. Exactly what experiments do you plan to run? Do you need to do a sensitivity analysis for some parameters relating to some of your early results? 
+
+A rough timeline is always appreciated - but keep things realistic. 
+
+% bibliography
+\printbibliography
+
+\end{document}
